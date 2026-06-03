@@ -1,0 +1,10 @@
+name: Allium Check
+on:
+  workflow_dispatch:
+  push:
+    paths: ['**/*.allium']
+  pull_request:
+    paths: ['**/*.allium']
+jobs:
+  check:
+    uses: aalda-tech/aalda-harness/.github/workflows/allium-check.yml@main

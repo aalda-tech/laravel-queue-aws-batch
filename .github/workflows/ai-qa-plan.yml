@@ -1,0 +1,8 @@
+name: AI QA Plan Generation
+on:
+  workflow_dispatch:
+  push:
+    tags: ['v*']
+jobs:
+  qa-plan:
+    uses: aalda-tech/aalda-harness/.github/workflows/ai-qa-plan.yml@main

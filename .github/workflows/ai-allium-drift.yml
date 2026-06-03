@@ -1,0 +1,10 @@
+name: AI Allium Drift Detection
+on:
+  workflow_dispatch:
+  push:
+    paths: ['**/*.allium']
+  pull_request:
+    paths: ['**/*.allium']
+jobs:
+  drift:
+    uses: aalda-tech/aalda-harness/.github/workflows/ai-allium-drift.yml@main
